@@ -40,7 +40,7 @@ This lab is composed of three parts:
 
    int main()
    {
-   		return EXIT_SUCCESS;
+       return EXIT_SUCCESS;
    }
    ```
 
