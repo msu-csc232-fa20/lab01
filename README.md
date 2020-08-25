@@ -352,7 +352,7 @@ This assignment is due by the end of the lab period. In order to avoid a late pe
 
 _This assignment is not graded. However, if it were, it would be assessed using the following rubric._
 
-This assignment is worth 3 points.
+This assignment is worth **3 points**.
 
 Category | Acceptance Criteria | Points
 ---------|---------------------|-------
