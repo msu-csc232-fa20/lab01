@@ -70,8 +70,6 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    $ git commit -m"LAB01 - Complete Part 1, Step 1."
    ```
 
-   // TODO: Remove this line when you have finished this step.
-
 1. Next, add two `typedef` statements of the form
 
    ```c++
@@ -90,8 +88,6 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    $ git commit -m"LAB01 - Complete Part 1, Step 2."
    ```
 
-   // TODO: Remove this line when you have finished this step.
-
 1. Inside the `main()` function, declare and initialize an `IntegerArray` variable `prime` to be an array containing the 16 integers: 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, using a declaration of the form:
 
    ```c++
@@ -104,8 +100,6 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    $ git add array.cpp
    $ git commit -m"LAB01 - Complete Part 1, Step 3."
    ```
-   
-   // TODO: Remove this line when you have finished this step. 
 
 1. Check that the array has been initialized properly by writing a `for` loop to display the elements of `prime`. Then recompile and execute your program (as you did in Step 1) to check if your statements are correct.
 
@@ -137,8 +131,6 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    $ git add array.cpp
    $ git commit -m"LAB01 - Complete Part 1, Step 4."
    ```
-
-   // TODO: Remove this line when you have finished this step.
 
 1. An initializer list with too many values is an error. Some compilers detect this error while others do not. Those that do not may allow the program to actually compile and run, and this will result in errors. Now you are to test your particular compiler to determine its behavior.
 
@@ -254,8 +246,6 @@ _Remember_: The end-of-string mark (i.e., the null character `'\0'`) that gets p
    ```text
    Each array was allocated <TODO: Put your answer here> bytes.
    ```
-   
-   // TODO: Remove this line when you have finished this sub-step.
    
    Using the information you have developed, what do you think are the addresses of: 
    
