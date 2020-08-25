@@ -25,9 +25,9 @@ Arrays are one of the first "data structures" introduced in introductory program
 
 This lab is composed of three parts:
 
-1. Part 1: Exploring One-dimensional Arrays
-1. Part 2: Exploring the Indexes and Addresses of Arrays
-1. Part 3: A Brief Look at Multidimensional Arrays
+1. Part 1: Exploring one-dimensional arrays
+1. Part 2: Exploring the indexes and addresses of arrays
+1. Part 3: Exploring what happens when we index arrays improperly
 
 As you follow along in this lab assignment, you'll be asked to
 
@@ -38,7 +38,7 @@ As you follow along in this lab assignment, you'll be asked to
 
 In the end, i.e., after your final commit and push, you'll be asked to create a pull request and then submit the URL of your repository in a Microsoft Teams assignment.
 
-### Part 1: Exploring One-dimensional Arrays
+### Part 1: Exploring one-dimensional arrays
 
 1. Create a file name `array.cpp` that contains the following stub:
 
@@ -223,15 +223,120 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
 
 _Remember_: The end-of-string mark (i.e., the null character `'\0'`) that gets placed at the end of each initialization string or a string that is input for a character array (e.g., `cin >> animal;`) provided that the character array has space for it. If it doesn't get stored, one cannot expect string operations and functions to work correctly. Thus, one must be sure the array is large enough so that it has space for this null character.
 
-### Part 2: Exploring the Indexes and Addresses of Arrays
+### Part 2: Exploring the indexes and addresses of arrays
 
-1. fsefsdf
-1. sdfsdf
+1. Block out the declarations and statements involving the character array `animal`. Then add declarations of three arrays of type `IntegerArray` in the following order:
 
-### Part 3: A Brief Look at Multidimensional Arrays
+   `first` initialized to all 0s
+   
+   `arr` initialized to all 1s
+   
+   `last` initialized to all 2s
+   
+   Then add output statements to display the addresses of `first`, `arr`, and `last`.
+   
+   List the resulting addresses below.
+   
+   |variable|address|
+   |--------|-------|
+   |`first` | TODO: Put address here, e.g., 0x7ffff4086c60|
+   |`arr`   | TODO: Put address here, e.g., 0x7ffff4086c60|
+   |`last`  | TODO: Put address here, e.g., 0x7ffff4086c60|
+   
+   Note, to print these addresses as hexadecimal values as shown above, you can use the IO manipulator `std::hex` as in 
+   
+   ```c++
+   std::cout << "Address of first: " << std::hex << &first << std::endl;
+   ```
+   
+   How many bytes were allocated to each array? You can use the `sizeof(type)` or `sizeof variable-name` to verify you have the right size. Add code to your program to that... (don't forget to switch back to decimal values using the `std::dec` IO manipulator if you add this code after a previous manipulator to print hexadecimal values).
+   
+   ```text
+   Each array was allocated <TODO: Put your answer here> bytes.
+   ```
+   
+   // TODO: Remove this line when you have finished this sub-step.
+   
+   Using the information you have developed, what do you think are the addresses of: 
+   
+   | array element | address |
+   |---------------|---------|
+   |`arr[2]`       | TODO: Put address here, e.g., 0x7ffff4086c60 |
+   |`arr[3]`       | TODO: Put address here, e.g., 0x7ffff4086c60 |
+   
+   Add some code to your program that will give the addresses of `arr[2]` and `arr[3]`. List the results of your running code.
+   
+   | array element | address |
+   |---------------|---------|
+   |`arr[2]`       | TODO: Put address here, e.g., 0x7ffff4086c60 |
+   |`arr[3]`       | TODO: Put address here, e.g., 0x7ffff4086c60 |
+   
+   Are they the same as your earlier guess? // TODO Answer yes or no
+   
+1. Now use the array variables `first`, `arr`, and `last` instead of `&first`, `&arr`, and `&last` in your output statement. Describe how the output changes (if it does). What can you conclude about the value of an array variable?
 
-1. sdfsdf
-1. sdfsd
+   ```text
+   TODO: Write your answer here.
+   ```
+   
+1. Next, add statements that display `&arr[0]`, `&arr[1]`, ... , `&arr[15]` and `arr`, `arr + 1`, ..., `arr + 15`. It's a good idea to do this with a `for` loop displaying `&arr[i]` and `arr + i` and vary `i` from 0 to 15. Based on the output produced, what can you conclude?
+
+   ```text
+   TODO: Write your answer here.
+   ```  
+   
+   What you've seen is that the index notation `&arr[i]` is equivalent to an address of the first array element plus and offset: `arr + i`; indeed the difference is _syntactical sugar_, two different ways of expressing the same thing. `arr + i` is the address of `arr[i]`.
+   
+1. Now, add statements to display the values of `arr[0]`, `arr[1]`, ..., `arr[15]` and also `*arr`, `*(arr + 1)`, ..., `*(arr + 15)` -- use a `for` loop. Based on the output produced, what can you conclude?
+
+   ```text
+   TODO: Write your answer here.
+   ```
+   
+   What happens if you remove the parentheses in the expressions `*(arr + i)`? Give an explanation below of why you think this happens: (_Hint_: Check the priorities of operators `*` and `+`.)
+   
+   ```text
+   TODO: Write your answer here
+   ```
+   
+   This example shows that the _base-address_ + _offset_ notation `*(arr + i)` is equivalent to the array reference notation `arr[i]`. The array reference notation is generally preferred, since it is clearer and easier to understand. However, the `base-address` + `offset` notation reveals what is actually going on.
+   
+1. Add statements to your program so that the program lists all the elements of `first`, then all the elements of `arr`, and then all the elements of `last`. Compile and execute it to see that it operates properly.
+
+### Part 3: Exploring what happens when we index arrays improperly
+
+When we declare an array, we give it a capacity, i.e., a number of elements. One would think that the compiler should complain when we write code that does not obey these declarations and not allow us to do it. But that isn't necessarily the case. We will now explore what does happen when array indices get out of range.
+
+1. To find out, add the following assignment statements _before_ the code you just added to output the array elements:
+
+   ```c++
+   arr[-10] = -999;
+   arr[20]  = 999; 
+   ```
+   
+   Now execute your program again. What array elements changed?
+   
+   ```text
+   TODO: Write your answer here
+   ```
+   
+   Now add the following output statements and run your program again:
+   
+   ```c++
+   std::cout << "\narr[-10]..arr[20]:\n";
+   for (int i{-10}; i <= 20; ++i)
+   {
+       std::cout << arr[i] << " ";
+   }
+   ```
+   
+   Based on this output, you should be able to explain why the elements of `first` and `last` got changed "indirectly." Give your explanation below:
+   
+   ```text
+   TODO: Write your answer here
+   ```
+   
+_Note that in the preceding code with illegal indices, if the array elements that were changed had contained critical information, they would have been corrupted. If they had contained program instructions, the program could crash. Clever people can sometimes exploit these kinds of features to introduce viruses and other kinds of malevolent code into programs._
 
 ## Submission Details
 
