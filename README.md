@@ -414,6 +414,13 @@ When we declare an array, we give it a capacity, i.e., a number of elements. One
    ```text
    TODO: Write your answer here
    ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 3, Step 1a."
+   ```
    
    Now add the following output statements and run your program again:
    
@@ -430,6 +437,13 @@ When we declare an array, we give it a capacity, i.e., a number of elements. One
    ```text
    TODO: Write your answer here
    ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 3, Step 1b."
+   ```
    
 _Note that in the preceding code with illegal indices, if the array elements that were changed had contained critical information, they would have been corrupted. If they had contained program instructions, the program could crash. Clever people can sometimes exploit these kinds of features to introduce viruses and other kinds of malevolent code into programs._
 
@@ -437,7 +451,10 @@ _Note that in the preceding code with illegal indices, if the array elements tha
 
 Once you have pushed your final changes to GitHub, create a _pull request_ that seeks to merge the changes in your `develop` branch into your `master` branch. When you are creating the pull request, be sure to select your lab instructor as a reviewer.
 
-After creating the pull request, submit the URL of your lab assignment's repository as a link submission.
+After creating the pull request, 
+
+1. Look at the changes in your files. If it appears something is missing, make sure you've saved all your changes. If additional changes were saved, commit them and push them (your pull request will automatically get updated with the new commits).
+1. When you're all done, submit the URL of your lab assignment's repository as a link submission.
 
 ## Due Date
 
