@@ -340,11 +340,13 @@ _Note that in the preceding code with illegal indices, if the array elements tha
 
 ## Submission Details
 
-sldkfsdlf
+Once you have pushed your final changes to GitHub, create a _pull request_ that seeks to merge the changes in your `develop` branch into your `master` branch. When you are creating the pull request, be sure to select your lab instructor as a reviewer.
+
+After creating the pull request, submit the URL of your lab assignment's repository as a link submission.
 
 ## Due Date
 
-This assignment is due by the end of the lab period.
+This assignment is due by the end of the lab period. In order to avoid a late penalty, follow the steps outlined above, regardless if you completed all the steps detailed in this lab. Always push your final changes to GitHub, create your pull request and submit the details in Microsoft Teams.
 
 ## Grading Rubric
 
