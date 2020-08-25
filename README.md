@@ -9,15 +9,22 @@ Arrays are one of the first "data structures" introduced in introductory program
 ## Getting Started
 
 1. Accept the GitHub Classroom Assignment Link provided to you in Microsoft Teams for Lab 1 - Arrays
-1. Once your repository has been created, clone it to your local machine
+1. Using Git Bash once your repository has been created, clone it to your local machine
 
    ```bash
    $ git clone <url-of-your-repository>
    ```
 
+1. Now navigate into this cloned repository
+
+   ```bash
+   $ cd lab01-<your-github-username>
+   ```
+
 1. Before you get started on any work, let's create the `develop` branch and push it to `origin`.
 
    ```bash
+   $ git checkout -b develop
    $ git push -u origin develop
    ```
 
