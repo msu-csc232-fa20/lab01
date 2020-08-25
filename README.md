@@ -309,7 +309,14 @@ _Remember_: The end-of-string mark (i.e., the null character `'\0'`) that gets p
    ```text
    Each array was allocated <TODO: Put your answer here> bytes.
    ```
-   
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 2, Step 1."
+   ```
+
    Using the information you have developed, what do you think are the addresses of: 
    
    | array element | address |
@@ -331,12 +338,26 @@ _Remember_: The end-of-string mark (i.e., the null character `'\0'`) that gets p
    ```text
    TODO: Write your answer here.
    ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 2, Step 2."
+   ```
    
 1. Next, add statements that display `&arr[0]`, `&arr[1]`, ... , `&arr[15]` and `arr`, `arr + 1`, ..., `arr + 15`. It's a good idea to do this with a `for` loop displaying `&arr[i]` and `arr + i` and vary `i` from 0 to 15. Based on the output produced, what can you conclude?
 
    ```text
    TODO: Write your answer here.
-   ```  
+   ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 2, Step 3."
+   ```
    
    What you've seen is that the index notation `&arr[i]` is equivalent to an address of the first array element plus and offset: `arr + i`; indeed the difference is _syntactical sugar_, two different ways of expressing the same thing. `arr + i` is the address of `arr[i]`.
    
@@ -345,16 +366,37 @@ _Remember_: The end-of-string mark (i.e., the null character `'\0'`) that gets p
    ```text
    TODO: Write your answer here.
    ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 2, Step 4a."
+   ```
    
    What happens if you remove the parentheses in the expressions `*(arr + i)`? Give an explanation below of why you think this happens: (_Hint_: Check the priorities of operators `*` and `+`.)
    
    ```text
    TODO: Write your answer here
    ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 2, Step 4b."
+   ```
    
    This example shows that the _base-address_ + _offset_ notation `*(arr + i)` is equivalent to the array reference notation `arr[i]`. The array reference notation is generally preferred, since it is clearer and easier to understand. However, the `base-address` + `offset` notation reveals what is actually going on.
    
 1. Add statements to your program so that the program lists all the elements of `first`, then all the elements of `arr`, and then all the elements of `last`. Compile and execute it to see that it operates properly.
+
+   Once you've placed you're satisfied that the above operates as expected, save your source code (`array.cpp`) file and commit your changes:
+
+   ```bash
+   $ git add array.cpp
+   $ git commit -m"LAB01 - Complete Part 2, Step 5."
+   ```
 
 ### Part 3: Exploring what happens when we index arrays improperly
 
