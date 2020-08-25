@@ -124,7 +124,7 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    prime[15] = 53
    ```
 
-   Once you have your program working properly, commit your changes.
+   Once you have your program working properly, commit your changes:
 
 
     ```bash
@@ -134,20 +134,34 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
 
 1. An initializer list with too many values is an error. Some compilers detect this error while others do not. Those that do not may allow the program to actually compile and run, and this will result in errors. Now you are to test your particular compiler to determine its behavior.
 
-   What happens when you try to compile a statement with too many values in the initializer list? You can find out by adding one or more values to your initializer list for `prime`. Do this and describe what happens below:
+   What happens when you try to compile a statement with too many values in the initializer list? You can find out by adding one or more values to your initializer list for `prime`. Do this, recompile and execute the program, and then describe what happens below:
    
    ```text
    TODO: Erase this line and put your answer in this text block.
+   ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 5."
    ```
 
 1. It is not an error to give too few values in the initializer list of an array.
 
-   What happens in this case? You can find out by changing the initialization of `prime` to use fewer than 16 integers and outputting the array elements. Describe what happens below:
+   What happens in this case? You can find out by changing the initialization of `prime` to use fewer than 16 integers and outputting the array elements. Do this, recompile and execute the program, and then describe what happens below:
    
    ```text
    TODO: Erase this line and put your answer in this text block.
    ```
    
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 6."
+   ```
+
 1. Now you will repeat the experiment performed on the `IntegerArray` using a `CharArray`. First surround the declaration of the integer array `prime` and the `for-loop` that displays the elements with macros to remove it from compilation:
 
    ```c++
@@ -159,28 +173,56 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    #endif
    ```
    
-   When you have blocked out the integer array `prime` and the `for` loop, then declare the `CharArray` variable `animal` initializing it with the characters `'r', 'h', 'i', 'n', 'o', 'c', 'e', 'r', 'o', 's'`. Check that the array has been properly initialized by adding a `for` loop that displays the elements of `animal` followed by something like `****`, all on the same line. After you have completed this, execute the `Part1` target. Describe what happens (i.e., what is printed) below:
+   When you have blocked out the integer array `prime` and the `for` loop, then declare the `CharArray` variable `animal` initializing it with the characters `'r', 'h', 'i', 'n', 'o', 'c', 'e', 'r', 'o', 's'`. Check that the array has been properly initialized by adding a `for` loop that displays the elements of `animal` followed by something like `****`, all on the same line. Do this, recompile and execute the program, and then describe what happens (i.e., what gets printed) below:
    
    ```text
    TODO: Erase this line and put your answer in this text block.
    ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 7."
+   ```
    
-1. Now check if adding one or more characters, i.e., adding too many initialization values, affects what happens. If so, add one or more characters and repeat the test. Describe what happens below.
+1. Now check if adding one or more characters, i.e., adding too many initialization values, affects what happens. If so, add one or more characters and repeat the test. Do this, recompile and execute the program, and then describe what happens (i.e., what gets printed) below:
 
    ```text
    TODO: Erase this line and put your answer in this text block.
    ```
+
+    Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 8."
+   ```
    
-1. Now check what happens when there are fewer values in the initializer list. Remove all but the first five characters in the initializer list and run the `Part1` target again. Describe what happens below.
+1. Now check what happens when there are fewer values in the initializer list. Remove all but the first five characters in the initializer list, recompile and execute the program, and then describe what happens (i.e., what gets printed) below:
                                                                                                                                                                                   
    ```text
    TODO: Erase this line and put your answer in this text block.
+   ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 9."
    ```
    
 1. It may not be completely clear what happened when the uninitialized character array locations were reached. What did the output operator do when the `for` loop sent it the character array elements that had not been initialized? To see this, modify the output in the `for` loop to display the actual ASCII codes being generated for each character array element. (_Hint_: Use a static cast `static_cast<int>(animal[i])` to convert `char`s to `int`s.) Tell below what is used to initialize the uninitialized array elements.
 
    ```text
    TODO: Erase this line and put your answer in this text block.
+   ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 10."
    ```
    
 1. Now try initializing the character array in a different way. Character arrays can also be initialized by using string literals like `"elephant"` -- so we can initialize the character array `animal` using the string literal in place of the curly brace initializer list syntax. We can also output a character array using `<<` directly, as in 
@@ -194,6 +236,13 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    ```text
    TODO: Erase this line and put your answer in this text block.
    ```
+
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 11."
+   ```
    
 1. Now repeat the test using the string `"rhinoceros"` instead. Describe what happens below.
 
@@ -201,6 +250,13 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    TODO: Erase this line and put your answer in this text block.
    ```
    
+   Once you've placed your answer in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 12a."
+   ```
+
    You may have gotten a warning message, even though the array has been declared to have 10 elements. The reason is that the character arrays are terminated by **null characters**, `'\0'`, whose ASCII code is 0, provided there is room to store this character. Since functions that process character arrays and expect to find this null character at the end of the string that is stored, they may not work properly when there is none.
 
    Thus, character arrays such as `animal` that are used to store strings should be declared large enough to store at least one extra character at the end of each string value, namely, the null character. This character is used by functions that process strings stored in character arrays to mark the end of the string. To see how this is done:
@@ -211,6 +267,13 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    
    ```c++
    TODO: Put your snippet of code here.
+   ```
+
+   Once you've placed your snippet of code in the above text block, save this (README.md) file and commit your changes:
+
+   ```bash
+   $ git add README.md
+   $ git commit -m"LAB01 - Complete Part 1, Step 12b."
    ```
 
 _Remember_: The end-of-string mark (i.e., the null character `'\0'`) that gets placed at the end of each initialization string or a string that is input for a character array (e.g., `cin >> animal;`) provided that the character array has space for it. If it doesn't get stored, one cannot expect string operations and functions to work correctly. Thus, one must be sure the array is large enough so that it has space for this null character.
