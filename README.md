@@ -237,7 +237,7 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
    $ git commit -m"LAB01 - Complete Part 1, Step 9."
    ```
    
-1. It may not be completely clear what happened when the uninitialized character array locations were reached. What did the output operator do when the `for` loop sent it the character array elements that had not been initialized? To see this, modify the output in the `for` loop to display the actual ASCII codes being generated for each character array element. (_Hint_: Use a static cast `static_cast<int>(animal[i])` to convert `char`s to `int`s.) Tell below what is used to initialize the uninitialized array elements.
+1. It may not be completely clear what happened when the uninitialized character array locations were reached. What did the output operator do when the `for` loop sent it the character array elements that had not been initialized? To see this, modify the output in the `for` loop to display the actual ASCII codes being generated for each character array element. (_Hint_: Use a static cast `static_cast<int>(animal[i])` to convert `char`s to `int`s. You may also want to put a single space after each character code printed to better see the ASCII codes). In the text block below, identify what is used to initialize the uninitialized array elements.
 
    ```text
    TODO: Erase this line and put your answer in this text block.
