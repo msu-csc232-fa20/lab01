@@ -8,7 +8,21 @@ Arrays are one of the first "data structures" introduced in introductory program
 
 ## Getting Started
 
-1. Accept the GitHub Classroom Assignment Link provided to you in Microsoft Teams for Lab 1 - Arrays
+1. If you haven't done so already, create a folder to keep your cloned repositories. For example, in your Windows home directory, create a folder named `csc232` (or whatever you like) using the Git Bash terminal window:
+
+   ```bash
+   $ mkdir csc232
+   ```
+
+1. Since Cygwin's concept of a home directory is different than Windows, create a symbolic link in your Cygwin home directory to the folder you created above in your Windows home directory. Issue the following commands from a Cygwin terminal window:
+
+   ```bash
+   $ ln -s /cygdrive/c/Users/username/csc232/
+   ```
+
+   where `username` is your Windows username. Now, when you start a Cygwin terminal window, you have a folder in your home directory that is the same one in your Windows home directory.
+   
+1. Now that your environment is in place, accept the GitHub Classroom Assignment Link provided to you in Microsoft Teams for Lab 1 - Arrays
 1. Using Git Bash once your repository has been created, clone it to your local machine
 
    ```bash
@@ -20,6 +34,8 @@ Arrays are one of the first "data structures" introduced in introductory program
    ```bash
    $ cd lab01-<your-github-username>
    ```
+
+   This folder (`lab01-<your-github-username>`) is from here on, referred to as your "working directory."
 
 1. Before you get started on any work, let's create the `develop` branch and push it to `origin`.
 
@@ -38,7 +54,7 @@ This lab is composed of three parts:
 
 As you follow along in this lab assignment, you'll be asked to
 
-1. Erase `TODO` comments in this `README.md` file
+1. Erase `TODO` comments or add text to text blocks in this `README.md` file
 1. Add and/or edit files.
 1. Commit your changes.
 1. Push your changes to GitHub
@@ -47,7 +63,7 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
 
 ### Part 1: Exploring one-dimensional arrays
 
-1. Create a file name `array.cpp` that contains the following stub:
+1. Create a file name `array.cpp` in your working directory (using any text editor, e.g., Notepad++ or Visual Studio Code) that contains the following stub:
 
    ```c++
    #include <cstdlib>
@@ -70,12 +86,14 @@ In the end, i.e., after your final commit and push, you'll be asked to create a 
 
    When you execute these commands, you will discover that nothing happens. It compiles and links, but when executed, it doesn't do anything. Not a big surprise, right?
 
-   Now that we're confident our stub compiles and executes, let's commit our changes.
+   Now that we're confident our stub compiles and executes, let's commit our changes (using the Git Bash console).
 
    ```bash
    $ git add array.cpp
    $ git commit -m"LAB01 - Complete Part 1, Step 1."
    ```
+
+   _Note: In general, when instructed to issue git commands, use the Git Bash console and when instructed to compile/run programs, use the Cygwin terminal window._
 
 1. Next, add two `typedef` statements of the form
 
